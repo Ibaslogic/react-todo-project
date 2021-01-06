@@ -84,6 +84,7 @@ body {
   /* addition */
   background: transparent;
   border: none;
+  outline: none;
 }
 
 .menuNav {
@@ -112,6 +113,7 @@ a {
   color: #3fffd2;
   text-transform: uppercase;
   font-weight: bold;
+  outline: none;
 }
 
 .menuNav li:first-child {
