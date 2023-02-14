@@ -1,0 +1,39 @@
+.formWrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(32 32 32 / 8%) 0px 10px 32px 0px;
+  padding: 40px;
+}
+
+.form input {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid rgb(209, 215, 217);
+}
+
+.form button {
+  border-radius: 2px;
+  border: none;
+  background-color: #758488;
+  font-size: 18px;
+  width: 100%;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
