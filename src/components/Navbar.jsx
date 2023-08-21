@@ -1,27 +1,26 @@
-import "./styles.css";
-import { useState } from "react";
+import { NavLink } from 'react-router-dom';
+
+const links = [
+  { path: '/', text: 'Home' },
+  { path: '/about', text: 'About' },
+  { path: '/login', text: 'Login' },
+  { path: '/profile', text: 'Profile' },
+];
 
 const Navbar = () => {
-  const [dropdown, setDropdown] = useState(false);
-
   return (
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>
-          <button onClick={() => setDropdown((prev) => !prev)}>
-            Services <span>&#8595;</span>
-          </button>
-          {dropdown && (
-            <ul>
-              <li>Design</li>
-              <li>Development</li>
-            </ul>
-          )}
-        </li>
-      </ul>
-    </nav>
+    <nav className="navbar">
+    <ul>
+      {links.map((link) => {
+        return (
+          <li key={link.text}>
+            <NavLink to={link.path}>{link.text}</NavLink>
+          </li>
+        );
+      })}
+    </ul>
+  </nav>
   );
 };
 export default Navbar;
+

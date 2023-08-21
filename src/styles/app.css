@@ -59,3 +59,13 @@ body {
   display: block;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* Active route */
+.active {
+  color: #005bb3;
+}
+
+
